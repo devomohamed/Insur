@@ -81,8 +81,8 @@ scrollTop.onclick = function (){
   });
 }
 
-window.onresize = function(){
-  window.location.reload()
-}
+// window.onresize = function(){
+//   window.location.reload()
+// }
 
 AOS.init();
