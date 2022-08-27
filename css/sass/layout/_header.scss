@@ -1,0 +1,101 @@
+.small_nav{
+    background-color: $darkColor;
+    color: #97a2b7;
+    font-size: 13px;
+    padding: 10px 0;
+    .navbar-toggler{
+        border: none;
+        outline: none;
+    }
+    a{
+        color: #97a2b7;
+        text-decoration: none;
+        transition: .3s;
+        &:hover{
+            color: #1a5fb1
+        }
+    }
+    .icons{
+        a{
+            color: $whiteColor;
+            transition: .3s;
+        &:hover{
+            color: #1a5fb1
+        }
+        }
+    }
+    .first svg{
+        color: $mainColor;
+      }
+}
+
+.big_nav{
+    padding: 30px 0;
+    .navbar-collapse{
+        z-index: 99;
+    }
+    .navbar-collapse.show,.navbar-collapse.collapsing{
+        background-color: #16243D !important;
+        top: 100px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        ul {
+            li {
+                padding: 10px 0;
+                a{
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }
+    .right_big_nav{
+        border-left: 1px solid #E0E4E8;
+        padding: 0 0 0 30px;
+        margin-left: 10px;
+        
+        svg{
+            cursor: pointer;
+        }
+    }
+}
+
+.big_nav,
+.fixed-top {
+  transition: 0.3s;
+}
+
+
+.nav2{
+    background-color: $whiteColor;
+    ul{
+        background-color: #F2F5F9;
+        border-radius: 10px;
+        .btn_button{
+          border-radius: 0 10px 10px 0 !important;
+          padding: 10px 20px;
+        }
+    }
+    .call{
+        font-size: 12px;
+        svg{
+            padding: 7px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            color: #0ce0ff;
+        }
+        a{
+            color:black;
+            font-size: 16px;
+            transition: .5s;
+            &:hover{
+                color: $mainColor;
+            }
+        }
+        span{
+            color: #97a2b7;
+        }
+    }
+}
+

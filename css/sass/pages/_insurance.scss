@@ -1,0 +1,100 @@
+.insurance-one {
+  .big-box {
+    .small-box {
+      width: 95%;
+      margin: 0 auto;
+      border-radius: 5%;
+      box-shadow: 0px 5px 20px 0px rgba(0 ,0 ,0 ,.07);
+      overflow: hidden;
+      &:hover {
+        .top{
+          &::after{
+            height: 100%;
+          }
+          img{
+            transform: scale(1.2);
+          }
+        }
+        .bottom{
+          svg{
+            background-color: $mainColor;
+            color: $whiteColor;
+            font-size: 18px;
+          }
+        }
+      }
+      .top {
+        overflow: hidden;
+        img{
+          width: 100%;
+          transition: .5s;
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          background-color: #696e77;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 0%;
+          opacity: 0.3;
+          z-index: 9;
+          transition: .5s;
+        }
+      }
+      .bottom {
+        svg{
+          position: absolute;
+          top: -20px;
+          right: 20px;
+          font-size: 20px;
+          padding: 20px;
+          background-color: $whiteColor;
+          border-radius: 5px;
+          z-index: 10;
+          box-shadow: 0px 5px 20px 0px rgba(0 ,0 ,0 ,.07);
+          color: $mainColor;
+          transition: .5s;
+        }
+        span{
+          display: block;
+          margin-bottom: 15px;
+          width: 40px;
+          height: 4px;
+          background-image: -webkit-linear-gradient(0deg, rgb(1, 95, 201) 0%, rgb(12, 224, 255) 100%);
+        }
+        h2{
+          font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+        }
+        p{
+          color: #97a2b7;
+        }
+      }
+    }
+  }
+}
+
+.quisque{
+  .container{
+    background-color: #015fc9;
+    color: $whiteColor;
+    border-radius: 10px 10px 0 0;
+    .box{
+      svg{
+        font-size: 70px;
+      }
+      button{
+        background-color: $whiteColor;
+        color: $mainColor;
+        height: fit-content;
+        transition: .3s;
+        &:hover{
+          background-color: #16243D;
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+}

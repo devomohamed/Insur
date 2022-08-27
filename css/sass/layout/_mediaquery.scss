@@ -1,0 +1,166 @@
+@include mobile {
+  .navbar .nav-item .dropdown-menu{ background-color: $darkColor !important; }
+    .about_company {
+        .text {
+          left: 0;
+          &::before {
+            bottom: 18%;
+            left: 91%;
+          }
+        }
+      }
+      .testmonials .buttom .swiper-slide .image img:first-of-type{
+        left: 33%;
+      }
+      .about_company .card_buttom img{
+        height: 87px;
+      }
+
+
+      .news-feed{
+        .boxes {
+          .box{
+            width: 100%;
+            }
+          }
+        }
+
+
+        .benefits {
+          .leFt{
+            width: 100% !important;
+          }
+          &::after{
+            display: none;
+          }
+        }
+
+
+        .quisque{
+          .container{
+            .box{
+              text-align: center;
+              flex-direction: column;
+              svg{
+                padding: 20px 0;
+              }
+              button{
+                padding: 15px 0;
+              }
+            }
+          }
+        }
+
+        .nav2{
+          ul{
+              background-color: #16243D !important;
+              
+              // border-radius: 30%;
+              .btn_button{
+                // border-radius: 0 30% 30% 0 !important;
+              }
+          }
+      }
+
+      .contact .inputs-box input{
+        width: 100%;
+      }
+}
+
+@include mediumScreen {
+  // .navbar .nav-item .dropdown-menu{ background-color: $darkColor !important; }
+    .slider {
+        .swiper {
+          .swiper-slide {
+            .overlay_slider {
+              h2{
+                  font-size: 40px;
+              }
+            }
+          }
+        }
+      }
+      .news-feed{
+        .boxes {
+          .box{
+            width: 100%;
+            }
+          }
+        }
+
+        .benefits {
+          .leFt{
+            width: 100% !important;
+          }
+          &::after{
+            display: none;
+          }
+        }
+
+        .nav2{
+          ul{
+            background-color: #16243D !important;
+
+              // border-radius: 30%;
+              .btn_button{
+                // border-radius: 0 30% 30% 0 !important;
+              }
+          }
+      }
+      .quisque{
+        .container{
+          .box{
+            text-align: center;
+            flex-direction: column;
+            svg{
+              padding: 20px 0;
+            }
+            button{
+              padding: 15px 0;
+            }
+          }
+        }
+      }
+      .contact .inputs-box input{
+        width: 100%;
+      }
+}
+
+@include largeScreen {
+    .slider {
+        .swiper {
+          .swiper-slide {
+            .overlay_slider {
+              h2{
+                  font-size: 50px;
+                  font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+      .nav2{
+        ul{
+            background-color: #f2f5f9;
+        }
+    }
+}
+
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+    background-color: $darkColor !important;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+/* ============ desktop view .end// ============ */

@@ -1,0 +1,44 @@
+.contact{
+  .txt-box{
+    .call{
+      a{
+        transition: .3s;
+        &:hover{
+          color: #0ce0ff;
+        }
+      }
+      svg{
+        color: #0ce0ff;
+        border-radius: 50%;
+        border: 1px solid #696e77;
+        transition: .9s;
+        padding: 10px;
+        &:hover{
+          background-color: $mainColor;
+          color: $whiteColor;
+        }
+      }
+    }
+    p:last-of-type{
+      color: #696e77;
+    }
+  }
+  .inputs-box{
+    .d-flex{
+      gap: 1%;
+      input{
+        width: 48%;
+        
+      }
+    }
+    input , textarea{
+      border: none;
+      color: #696E79;
+      background-color: #f2f5f9;
+      padding: 10px 15px;
+      // margin: 5px;
+      border-radius: 10px;
+      outline: none;
+    }
+  }
+}
